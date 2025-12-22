@@ -1,2 +1,0 @@
-# hacktheschool
-games
