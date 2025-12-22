@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Portal & Resources</title> <style>
+    <title>Google Classroom - Dashboard</title> 
+    
+    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png">
+
+    <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             background-color: #0f172a;
@@ -22,6 +25,7 @@
         }
 
         h1 { color: #38bdf8; font-size: 2rem; }
+        p { color: #94a3b8; }
         
         .container {
             display: grid;
@@ -46,9 +50,11 @@
         .card:hover {
             transform: translateY(-5px);
             border-color: #38bdf8;
+            background: #2d3748;
         }
 
-        /* Subtle Boss Key Hint */
+        .card h2 { margin: 0 0 10px 0; font-size: 1.5rem; }
+
         .hint {
             position: fixed;
             bottom: 10px;
@@ -62,29 +68,32 @@
 
     <div class="header">
         <h1>Educational Resource Hub</h1>
-        <p>Select a module to begin</p>
+        <p>Select a module to begin the assignment</p>
     </div>
 
     <div class="container">
         <a href="https://www.google.com/logos/2010/pacman10-i.html" target="_blank" class="card">
             <h2>Module 1.1</h2>
-            <p>Logical Sequencing Exercise</p>
+            <p>Logical Analysis Training</p>
         </a>
 
         <a href="game1/index.html" class="card">
             <h2>Module 1.2</h2>
-            <p>Spatial Awareness Training</p>
+            <p>Spatial Awareness Lab</p>
+        </a>
+
+        <a href="https://poki.com" target="_blank" class="card">
+            <h2>Module 1.3</h2>
+            <p>Extended Resource Database</p>
         </a>
     </div>
 
-    <div class="hint">v1.0.4 - Press 'B' for Help</div>
+    <div class="hint">v.1.2 - System Ready</div>
 
     <script>
-        // THE BOSS KEY SCRIPT
+        // BOSS KEY: Press 'B' to quickly redirect to Wikipedia
         document.addEventListener('keydown', function(e) {
-            // Check if the 'b' key is pressed (case insensitive)
             if (e.key.toLowerCase() === 'b') {
-                // Change the URL below to whatever "safe" site you want
                 window.location.href = "https://www.wikipedia.org";
             }
         });
